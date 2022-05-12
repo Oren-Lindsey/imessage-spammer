@@ -22,5 +22,5 @@ if button returned of whoToSpamQuestion is "Continue" then
 		display dialog "Ok, it wasn't sent" with icon note buttons {"Done"} default button "Done"
 	end if
 else
-	display notification "Something went wrong"
+	display notification "Canceled"
 end if
