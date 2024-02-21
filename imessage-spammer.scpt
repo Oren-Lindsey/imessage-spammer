@@ -11,10 +11,8 @@ if button returned of whoToSpamQuestion is "Continue" then
 		tell application "Messages"
 			set targetService to 1st account whose service type = iMessage
 			set targetBuddy to participant whoToSpam of targetService
-			--set targetBuddyTwo to participant "sr.lindsey@icloud.com" of targetService
 			repeat loops times
 				send whatToSend to targetBuddy
-				--send textToSend to whoToSpam
 			end repeat
 		end tell
 		display dialog "Sent" with icon note buttons {"Done"} default button "Done"
